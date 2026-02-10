@@ -1,0 +1,11 @@
+.tabs{
+    padding: 20px 20px 5px 50px;
+    background: pink;
+}
+.tab{
+    text-decoration: none;
+    margin: 20px;
+}
+.active{
+    color: red;
+}
