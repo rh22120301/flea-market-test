@@ -19,8 +19,8 @@
 
 
 ### 使用技術(実行環境)
-- PHP 8.1.34
-- mysql  Ver 8.0.44
+- PHP  8.1.34
+- mysql  Ver 8.0.26
 - Laravel Framework 8.83.8
 
 ### URL
