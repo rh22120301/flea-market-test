@@ -9,10 +9,18 @@
 1. docker-compose exec php bash
 2. composer install
 3. 「.env.example」ファイルを 「.env」ファイルに命名を変更。または、新しく.envファイルを作成
-4. php artisan key:generate
-6. php artisan migrate
-7. php artisan db:seed
-8. php artisan storage:link
+4. .envに以下の環境変数を追加
+`DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel_db
+DB_USERNAME=laravel_user
+DB_PASSWORD=laravel_pass`
+
+6. php artisan key:generate
+7. php artisan migrate
+8. php artisan db:seed
+9. php artisan storage:link
 
 ### ER図
 <img width="731" height="771" alt="flea-market-test" src="https://github.com/user-attachments/assets/0d11a5a6-0060-4181-97fb-a28ea5c31d56" />
