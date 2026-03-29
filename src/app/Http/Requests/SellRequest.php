@@ -46,7 +46,7 @@ class SellRequest extends FormRequest
             'image.required' => '画像を選択してください', 
             'image.mimes' => '画像はjpegまたはpng形式でアップロードしてください',
             'categories.required' => 'カテゴリーを選択してください', 
-            'condition.required' => '商品の状態を選択してください', 
+            'condition_id.required' => '商品の状態を選択してください', 
             'name.required' => '商品名を入力してください', 
             'brand.required' => 'ブランド名を入力してください',  
             'detail.required' => '商品の説明を入力してください', 

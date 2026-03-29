@@ -54,7 +54,7 @@
                     </select>
                 </div>
                 <div class="form__error">
-                    @error('condition')
+                    @error('condition_id')
                         {{ $message }}
                     @enderror
                 </div>
