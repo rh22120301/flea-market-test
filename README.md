@@ -7,9 +7,11 @@
 
 ### Laravel環境構築
 1. docker-compose exec php bash
-2. composer install
-3. 「.env.example」ファイルを 「.env」ファイルに命名を変更。または、新しく.envファイルを作成
-4. .envに以下の環境変数を追加
+2. mkdir -p storage/framework/{cache,sessions,views}
+3. chmod -R 777 storage bootstrap/cache
+4. composer install
+5. 「.env.example」ファイルを 「.env」ファイルに命名を変更。または、新しく.envファイルを作成
+6. .envに以下の環境変数を追加
 ```
 DB_CONNECTION=mysql
 DB_HOST=mysql
