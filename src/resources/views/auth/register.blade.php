@@ -6,13 +6,6 @@
 
 @section('content')
 
-<div class="header">
-    <div class="header__inner">
-        <a class="header__logo" href="/">
-            COACHTECH
-        </a>
-    </div>
-</div>
 
     <div class="register-form__content">
         <div class="register-form__heading">会員登録</div>

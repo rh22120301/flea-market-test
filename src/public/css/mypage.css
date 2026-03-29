@@ -1,0 +1,128 @@
+.mypage-top{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    margin: 30px 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mypage-user{
+    width: 20%;
+    display: flex;
+    margin: auto 30px;
+    align-items: center;
+}
+.user-image{
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto 20px;
+}
+
+.user-name{
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto 20px;
+}
+
+.profile-page{
+    display: block;
+    width: 12%;
+    padding: 5px;
+    margin: 0 50px;
+    border: solid 1px rgb(255, 83, 83);
+    border-radius: 5px;
+    background: white;
+    color: rgb(255, 83, 83);
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.tabs{
+    margin: 10px 0 40px 0;
+    padding: 20px 20px 10px 50px;
+    border-bottom: 1px solid gray;
+}
+.tab{
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+    color: gray;
+}
+.active{
+    color: red;
+}
+
+.product-group{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.product-card{
+    display: block;
+    max-width: 90%;
+    margin: 10px auto;
+    text-decoration: none;
+}
+.product-card__image{
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-card__name{
+    padding: 0 5px;
+    color: black;
+    margin: 2px auto;
+}
+.sold-label{
+    padding: 0 5px;
+    color: black;
+    margin: 2px auto;
+}
+
+@media screen and (max-width: 1400px) {
+    .profile-page{
+        width: 15%;
+    }
+    .mypage-user{
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .profile-page{
+        width: 20%;
+    }
+    .mypage-user{
+        width: 32%;
+    }
+    .user-name{
+        font-size: 15px;
+        margin: auto 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .profile-page{
+        width: 20%;
+    }
+    .product-group{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .mypage-user{
+        width: 35%;
+        margin: auto 30px;
+    }
+    .user-name{
+        font-size: 15px;
+        margin: auto 20px;
+    }
+
+}

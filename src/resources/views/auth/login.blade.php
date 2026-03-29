@@ -1,23 +1,14 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 @endsection
 
 @section('content')
-
-<div class="header">
-    <div class="header__inner">
-        <a class="header__logo" href="/">
-            COACHTECH
-        </a>
-    </div>
-</div>
-
     <div class="login-form__content">
         <div class="login-form__heading">ログイン</div>
-        <form class="form" action="/login" method="post">
-            @csrf
+        <form class="form" action="{{ route('login') }}" method="post">
+        @csrf
             
             <div class="form-group">
                 <div class="form__title">メールアドレス</div>
@@ -43,5 +34,5 @@
 
         </form>
     </div>
-</div>
+
 @endsection

@@ -1,5 +1,5 @@
 .profile-form__content{
-    max-width: 50%;
+    max-width: 70%;
     margin: 0 auto;
 }
 .profile-form__heading{
@@ -8,14 +8,39 @@
     font-size: 20px;
     text-align: center;
 }
-.image-input{
-    display: none;
+
+.profile-user{
+    width: 20%;
+    display: flex;
+    margin: auto 30px;
+    align-items: center;
 }
-.image-button{
-    display: inline-block;
-    color: red;
+.user-image{
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto 20px;
+}
+
+
+.image-input::file-selector-button{
+    content: "画像を選択する";
+    display: block;
+    padding: 5px;
+    flex-shrink: 0;
+    width: 150px;
+    border: solid 1px rgb(255, 83, 83);
+    border-radius: 5px;
+    background: white;
+    color: rgb(255, 83, 83);
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
     cursor: pointer;
 }
+
 
 .form{
     width: 50%;
@@ -50,4 +75,21 @@
     text-align: center;
     font-size: 15px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+    .profile-form__content{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-form__content{
+        max-width: 90%;
+    }
+    .image-input::file-selector-button{
+        width: 120px;
+        font-size: 10px;
+    }
+
 }

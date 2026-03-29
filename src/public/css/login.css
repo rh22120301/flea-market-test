@@ -6,7 +6,8 @@
 .login-form__heading{
     width: 100%;
     padding: 60px 0 20px 0;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
 
 }
@@ -23,14 +24,15 @@
 }
 .form__title{
     width: 100%;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
     padding: 5px 0;
 
 }
 .form__input{
     width: 100%;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 10px;
 }
 .form__error{
     color: red;
@@ -38,14 +40,15 @@
 
 .form__button-submit{
     width: 100%;
-    padding: 6px 30px;
+    padding: 10px 20px;
     margin-top: 30px;
     border: none;
     border-radius: 3px;
-    background: rgb(255, 71, 71);
+    background: rgb(255, 83, 83);
     color: #fff;
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 500;
     cursor: pointer;
 }
 .register-page{
@@ -54,5 +57,19 @@
     text-align: center;
     text-decoration: none;
     margin: 20px;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1540px) {
+    .login-form__content
+    {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .login-form__content
+    {
+        max-width: 100%;
+    }
 }

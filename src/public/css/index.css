@@ -1,11 +1,56 @@
 .tabs{
-    padding: 20px 20px 5px 50px;
-    background: pink;
+    margin: 10px 0 40px 0;
+    padding: 20px 20px 10px 50px;
+    border-bottom: 1px solid gray;
 }
 .tab{
     text-decoration: none;
     margin: 20px;
+    font-weight: bold;
+    color: gray;
 }
 .active{
     color: red;
+}
+
+
+
+.product-group{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.product-card{
+    display: block;
+    max-width: 90%;
+    margin: 10px auto;
+    text-decoration: none;
+}
+.product-card__image{
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-card__name{
+    padding: 0 5px;
+    color: black;
+    margin: 2px auto;
+}
+.sold-label{
+    padding: 0 5px;
+    color: black;
+    margin: 2px auto;
+}
+
+@media screen and (max-width: 1540px) {
+    
+}
+
+@media screen and (max-width: 850px) {
+    .product-group{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
 }
