@@ -26,4 +26,6 @@ docker/mysql/data/
 !/src/storage/app/public
 /src/storage/app/public/*
 !/src/storage/app/public/products
+!/src/storage/app/public/products/*
 !/src/storage/app/public/profiles
+!/src/storage/app/public/profiles/*
