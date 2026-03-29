@@ -19,6 +19,7 @@ docker/mysql/data/
 /storage/logs/
 /storage/framework/cache/
 
+
 /src/storage/*
 !/src/storage/app
 /src/storage/app/*
